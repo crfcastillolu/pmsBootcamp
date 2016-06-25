@@ -1,0 +1,24 @@
+<h1>Project#index</h1>
+
+<div>
+	<table class="table">
+		<thead>
+		<tr>
+			<th>id</th>
+			<th>code name</th>
+			<th>due name</th>
+			<th>budget</th>
+		</tr>
+		</thead>
+		<tbody>
+			<%@projects_employee.each do |project| %>
+				<tr>
+					<td> <a href="/employees/<%=project.id%>"><%=project.id%></a> </td>
+					<td><%=project.code_name%></td>
+					<td><%=project.due_date%></td>
+					<td><%=project.budget%></td>
+				</tr>
+			<%end%>
+		</tbody>
+	</table>
+</div>
